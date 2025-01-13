@@ -1,0 +1,8 @@
+// Här förkortar vi fill name till förkoting.
+@forward "footer.scss" as ft-*;
+@forward "hero.scss" as hr-*;
+@forward "main.scss" as mi-*;
+@forward "nav.scss" as nv-*;
+@forward "orther.scss" as ot-*;
+@forward "variables.scss" as vb-*;
+@forward "global.scss" as gb-*;

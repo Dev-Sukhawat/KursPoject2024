@@ -1,0 +1,453 @@
+@mixin footer {
+    .indexFooter {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        // bottom: clamp(-185rem, -184.5rem, -175rem);
+        bottom: -180rem;
+        left: 0px;
+        list-style: none;
+        text-decoration: none;
+        padding: var(--size-16px-1rem);
+        background-image: url(./gallery/background/footer.png);
+        background-size: 100% 100%;
+        width: 100%;
+        height: auto;
+
+        > .socialLogo,
+        .info {
+            > ul {
+                margin: 1rem;
+                display: inline-flex;
+                flex-direction: row;
+                list-style: none;
+                font-family: "Chakra Petch", sans-serif;
+                font-style: normal;
+                gap: 2rem;
+            }
+
+            a {
+                font-size: clamp(1rem, 2.5vw, 2rem);
+                color: var(--Text-Co-Black);
+                text-decoration: none;
+                font-family: "Funnel Sans", serif;
+                font-style: normal;
+            }
+
+            a:hover {
+                text-decoration: underline white;
+                text-shadow: 0px 2px 10px var(--Text-Co-White);
+            }
+        }
+
+        .socialLogo {
+            text-shadow: 1px 1px 10px var(--Text-Co-White);
+
+            a:hover {
+                text-shadow: 1px 1px 5px rgb(6, 161, 212);
+            }
+        }
+
+        h1 {
+            font-size: clamp(2rem, 2.5vw, 2.5rem);
+            text-transform: capitalize;
+            color: var(--Text-Co-Black);
+        }
+    }
+}
+
+@mixin gallery {
+    .galleryFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        bottom: -10rem;
+        list-style: none;
+        text-decoration: none;
+        padding: var(--size-16px-1rem);
+        background-image: url(./gallery/background/footer.png);
+        background-size: 100% 100%;
+        width: 100%;
+
+        > .socialLogo,
+        .info {
+            > ul {
+                margin: 1rem;
+                display: inline-flex;
+                flex-direction: row;
+                list-style: none;
+                font-family: "Chakra Petch", sans-serif;
+                font-style: normal;
+                gap: 2rem;
+            }
+
+            a {
+                font-size: clamp(1rem, 2.5vw, 2rem);
+                color: var(--Text-Co-Black);
+                text-decoration: none;
+                font-family: "Funnel Sans", serif;
+                font-style: normal;
+            }
+
+            a:hover {
+                text-decoration: underline white;
+                text-shadow: 0px 2px 10px var(--Text-Co-White);
+            }
+        }
+
+        .socialLogo {
+            text-shadow: 1px 1px 10px var(--Text-Co-White);
+
+            a:hover {
+                text-shadow: 1px 1px 5px rgb(6, 161, 212);
+            }
+        }
+
+        h1 {
+            font-size: clamp(2rem, 2.5vw, 2.5rem);
+            text-transform: capitalize;
+            color: var(--Text-Co-Black);
+        }
+    }
+}
+
+@mixin L-Latop {
+    .indexFooter {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        bottom: -45rem;
+        left: 0px;
+        list-style: none;
+        text-decoration: none;
+        padding: var(--size-16px-1rem);
+        background-image: url(./gallery/background/footer.png);
+        background-size: 100% 100%;
+        width: 100%;
+
+        > .socialLogo,
+        .info {
+            > ul {
+                margin: 1rem;
+                display: inline-flex;
+                flex-direction: row;
+                list-style: none;
+                font-family: "Chakra Petch", sans-serif;
+                font-style: normal;
+                gap: 2rem;
+            }
+
+            a {
+                font-size: clamp(1rem, 2.5vw, 2rem);
+                color: var(--Text-Co-Black);
+                text-decoration: none;
+                font-family: "Funnel Sans", serif;
+                font-style: normal;
+            }
+
+            a:hover {
+                text-decoration: underline white;
+                text-shadow: 0px 2px 10px var(--Text-Co-White);
+            }
+        }
+
+        .socialLogo {
+            text-shadow: 1px 1px 10px var(--Text-Co-White);
+
+            a:hover {
+                text-shadow: 1px 1px 5px rgb(6, 161, 212);
+            }
+        }
+
+        h1 {
+            font-size: clamp(2rem, 2.5vw, 2.5rem);
+            text-transform: capitalize;
+            color: var(--Text-Co-Black);
+        }
+    }
+}
+
+// Media
+@mixin M-Latop {
+    .indexFooter {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        bottom: -45rem;
+        left: 0px;
+        padding: var(--size-16px-1rem);
+        background-image: url(./gallery/background/footer.png);
+        background-size: 100% 100%;
+        width: 100%;
+
+        > .socialLogo,
+        .info {
+            > ul {
+                margin: 1rem;
+                display: inline-flex;
+                flex-direction: row;
+                list-style: none;
+                font-family: "Chakra Petch", sans-serif;
+                font-style: normal;
+                gap: 1rem;
+            }
+
+            a {
+                font-size: clamp(1.5rem, 2.5vw, 2rem);
+                color: var(--Text-Co-Black);
+                text-decoration: none;
+                font-family: "Funnel Sans", serif;
+                font-style: normal;
+            }
+
+            a:hover {
+                text-decoration: underline white;
+                text-shadow: 0px 2px 10px var(--Text-Co-White);
+            }
+        }
+
+        .socialLogo {
+            text-shadow: 1px 1px 10px var(--Text-Co-White);
+
+            a:hover {
+                text-shadow: 1px 1px 5px rgb(6, 161, 212);
+            }
+        }
+
+        h1 {
+            font-size: clamp(2rem, 2.5vw, 2.5rem);
+            text-transform: capitalize;
+            color: var(--Text-Co-Black);
+            text-align: center;
+        }
+    }
+}
+
+@mixin Latop-footer {
+    .indexFooter {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        bottom: -115rem;
+        left: 0px;
+        padding: var(--size-16px-1rem);
+        background-image: url(./gallery/background/footer.png);
+        background-size: 100% 100%;
+        width: 100%;
+
+        > .socialLogo,
+        .info {
+            > ul {
+                margin: 1rem;
+                display: inline-flex;
+                flex-direction: row;
+                list-style: none;
+                font-family: "Chakra Petch", sans-serif;
+                font-style: normal;
+                gap: 1rem;
+            }
+
+            a {
+                font-size: clamp(1.5rem, 2.5vw, 2rem);
+                color: var(--Text-Co-Black);
+                text-decoration: none;
+                font-family: "Funnel Sans", serif;
+                font-style: normal;
+            }
+
+            a:hover {
+                text-decoration: underline white;
+                text-shadow: 0px 2px 10px var(--Text-Co-White);
+            }
+        }
+
+        .socialLogo {
+            text-shadow: 1px 1px 10px var(--Text-Co-White);
+
+            a:hover {
+                text-shadow: 1px 1px 5px rgb(6, 161, 212);
+            }
+        }
+
+        h1 {
+            font-size: clamp(2rem, 2.5vw, 2.5rem);
+            text-transform: capitalize;
+            color: var(--Text-Co-Black);
+            text-align: center;
+        }
+    }
+}
+
+@mixin Tablet {
+    .indexFooter {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        bottom: -120rem;
+        left: 0px;
+        padding: var(--size-16px-1rem);
+        background-image: url(./gallery/background/footer.png);
+        background-size: 100% 100%;
+        width: 100%;
+
+        > .socialLogo,
+        .info {
+            > ul {
+                margin: 1rem;
+                display: inline-flex;
+                flex-direction: row;
+                list-style: none;
+                font-family: "Chakra Petch", sans-serif;
+                font-style: normal;
+                gap: 1rem;
+            }
+
+            a {
+                font-size: clamp(1.5rem, 2.5vw, 2rem);
+                color: var(--Text-Co-Black);
+                text-decoration: none;
+                font-family: "Funnel Sans", serif;
+                font-style: normal;
+            }
+
+            a:hover {
+                text-decoration: underline white;
+                text-shadow: 0px 2px 10px var(--Text-Co-White);
+            }
+        }
+
+        .socialLogo {
+            text-shadow: 1px 1px 10px var(--Text-Co-White);
+
+            a:hover {
+                text-shadow: 1px 1px 5px rgb(6, 161, 212);
+            }
+        }
+
+        h1 {
+            font-size: clamp(2rem, 2.5vw, 2.5rem);
+            text-transform: capitalize;
+            color: var(--Text-Co-Black);
+            text-align: center;
+        }
+    }
+}
+
+@mixin Phone {
+    .indexFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        bottom: 0px;
+        left: 0px;
+        padding: var(--size-16px-1rem);
+        background-image: url(./gallery/background/footer.png);
+        background-size: 100% 100%;
+        width: 100%;
+
+        > .socialLogo,
+        .info {
+            > ul {
+                margin: 1rem;
+                display: inline-flex;
+                flex-direction: row;
+                list-style: none;
+                font-family: "Chakra Petch", sans-serif;
+                font-style: normal;
+                gap: 0.5rem;
+            }
+
+            a {
+                font-size: clamp(0.8rem, 2vw, 2rem);
+                color: var(--Text-Co-Black);
+                text-decoration: none;
+                font-family: "Funnel Sans", serif;
+                font-style: normal;
+            }
+
+            a:hover {
+                text-decoration: underline white;
+                text-shadow: 0px 2px 10px var(--Text-Co-White);
+            }
+        }
+
+        .socialLogo {
+            text-shadow: 1px 1px 10px var(--Text-Co-White);
+
+            a:hover {
+                text-shadow: 1px 1px 5px rgb(6, 161, 212);
+            }
+        }
+
+        h1 {
+            font-size: clamp(1rem, 2vw, 2rem);
+            text-transform: capitalize;
+            color: var(--Text-Co-Black);
+            text-align: center;
+        }
+    }
+}
+
+@mixin Phone-gallery {
+    .galleryFooter {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+        bottom: -10rem;
+        list-style: none;
+        text-decoration: none;
+        padding: var(--size-16px-1rem);
+        background-image: url(./gallery/background/footer.png);
+        background-size: 100% 100%;
+        width: 100%;
+
+        > .socialLogo,
+        .info {
+            > ul {
+                margin: 1rem;
+                display: inline-flex;
+                flex-direction: row;
+                list-style: none;
+                font-family: "Chakra Petch", sans-serif;
+                font-style: normal;
+                gap: 2rem;
+            }
+
+            a {
+                font-size: clamp(0.8rem, 2vw, 2rem);
+                color: var(--Text-Co-Black);
+                text-decoration: none;
+                font-family: "Funnel Sans", serif;
+                font-style: normal;
+            }
+
+            a:hover {
+                text-decoration: underline white;
+                text-shadow: 0px 2px 10px var(--Text-Co-White);
+            }
+        }
+
+        .socialLogo {
+            text-shadow: 1px 1px 10px var(--Text-Co-White);
+
+            a:hover {
+                text-shadow: 1px 1px 5px rgb(6, 161, 212);
+            }
+        }
+
+        h1 {
+            font-size: clamp(1rem, 2vw, 2rem);
+            text-transform: capitalize;
+            color: var(--Text-Co-Black);
+            text-align: center;
+        }
+    }
+}

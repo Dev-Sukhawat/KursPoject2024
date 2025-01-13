@@ -1,0 +1,32 @@
+[
+    {
+        "title": "Blade Runner (1982)",
+        "paragraph": "Ridley Scott’s cyberpunk masterpiece explores the blurred lines between humanity and artificial life in a dystopian Los Angeles. The film’s philosophical narrative, iconic visuals, and unforgettable performances by Harrison Ford and Rutger Hauer have cemented its legacy as a genre-defining classic.",
+        "src": "https://m.media-amazon.com/images/M/MV5BOWQ4YTBmNTQtMDYxMC00NGFjLTkwOGQtNzdhNmY1Nzc1MzUxXkEyXkFqcGc@._V1_.jpg"
+    },
+    {
+        "title": "2001: A Space Odyssey (1968)",
+        "paragraph": "Directed by Stanley Kubrick, this epic takes viewers on a journey through human evolution, space exploration, and artificial intelligence. Its groundbreaking visuals, haunting score, and enigmatic storytelling make it one of cinema’s most influential works.",
+        "src": "https://m.media-amazon.com/images/M/MV5BNjU0NDFkMTQtZWY5OS00MmZhLTg3Y2QtZmJhMzMzMWYyYjc2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+        "title": "Star Wars: Episode V - The Empire Strikes Back (1980)",
+        "paragraph": "The second installment in the Star Wars saga delves into deeper emotional themes while delivering iconic moments like the revelation of Darth Vader’s identity. Its rich storytelling and advanced special effects make it a cornerstone of sci-fi cinema.",
+        "src": "https://m.media-amazon.com/images/M/MV5BMTkxNGFlNDktZmJkNC00MDdhLTg0MTEtZjZiYWI3MGE5NWIwXkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+        "title": "The Matrix (1999)",
+        "paragraph": "This Wachowski-directed phenomenon combines philosophical questions about reality with state-of-the-art visual effects and martial arts choreography. Its cyberpunk aesthetic and revolutionary \"bullet-time\" action have had a lasting cultural impact.",
+        "src": "https://wallpapercave.com/wp/wp13137400.jpg"
+    },
+    {
+        "title": "Interstellar (2014)",
+        "paragraph": "Christopher Nolan’s ambitious space epic blends scientific accuracy with emotional storytelling. Exploring themes of love, time, and survival, it features awe-inspiring visuals and a powerful score by Hans Zimmer.",
+        "src": "https://m.media-amazon.com/images/M/MV5BYzdjMDAxZGItMjI2My00ODA1LTlkNzItOWFjMDU5ZDJlYWY3XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg"
+    },
+    {
+        "title": "Inception (2010)",
+        "paragraph": "This mind-bending thriller takes audiences into the layers of the subconscious. With its intricate plot, dazzling effects, and intense performances, it’s a thought-provoking exploration of dreams and reality, earning its place as a modern classic.",
+        "src": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_.jpg"
+    }
+]

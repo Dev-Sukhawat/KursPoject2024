@@ -1,0 +1,116 @@
+@use "scss/" as *;
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Funnel+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+
+// @forward "footer.scss" as ft-*;
+// @forward "hero.scss" as hr-*;
+// @forward "main.scss" as mi-*;
+// @forward "nav.scss" as nv-*;
+// @forward "orther.scss" as ot-*;
+// @forward "variables.scss" as vb-*;
+// @forward "global.scss" as gb-*;
+
+body {
+    margin: var(--gap-16-px) var(--gap-16-px) 0 var(--gap-16-px);
+    background-color: var(--ba-Co);
+}
+
+@include nv-nav();
+@include ot-small_footer();
+@include hr-heroAbove();
+
+@include mi-movies();
+@include mi-img();
+@include mi-video();
+@include mi-aboutMain();
+@include mi-history();
+
+@include ft-footer();
+@include ft-gallery();
+
+// L_Latop
+@media only screen and (max-width: 1600px) {
+    body {
+        margin: var(--size-16px-1rem) 0 0 0;
+        background-color: var(--ba-Co);
+        overflow-x: hidden;
+    }
+
+    .example::-webkit-scrollbar {
+        display: none;
+    }
+
+    @include nv-L_Latop();
+    @include ot-L_Latop();
+    @include hr-L_Latop();
+}
+
+// M-Latop
+@media only screen and (max-width: 1535px) {
+    @include mi-M-Latop();
+
+    @include ft-M-Latop();
+}
+
+// Latop
+@media only screen and (max-width: 1160px) {
+    body {
+        margin: var(--size-16px-1rem) 0 0 0;
+        background-color: var(--ba-Co);
+    }
+
+    @include nv-Latop();
+    @include ot-Latop();
+    @include hr-Latop();
+
+    @include mi-Latop-movies();
+
+    @include ft-Latop-footer();
+}
+
+// Tablet
+@media only screen and (max-width: 920px) {
+    body {
+        margin: var(--gap-16-px) 0 0 0;
+        background-color: var(--ba-Co);
+    }
+
+    @include nv-Tablet();
+    @include ot-Tablet();
+    @include hr-Tablet();
+
+    @include mi-Tablet();
+    @include mi-Tablet-aboutMain();
+
+    @include ft-Tablet();
+}
+
+// Phone
+@media only screen and (max-width: 520px) {
+    // Stilar för index-sidan
+    body.index-page {
+        margin: 0px;
+        background-color: var(--ba-Co);
+
+        @include nv-Phone;
+        @include hr-Phone;
+        @include mi-Phone;
+
+        @include ft-Phone;
+    }
+
+    // Stilar för andra sidor
+    body.other-page {
+        margin: 0px;
+        background-color: var(--ba-Co);
+
+        @include nv-Phone;
+        @include hr-Phone-page;
+
+        @include mi-Phone-img;
+        @include mi-Phone-video;
+        @include mi-Phone-aboutMain;
+        @include mi-Phone-history;
+
+        @include ft-Phone-gallery;
+    }
+}

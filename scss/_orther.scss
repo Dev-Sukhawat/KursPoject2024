@@ -1,0 +1,153 @@
+@mixin small_footer {
+    .small_footer {
+        position: absolute;
+        display: flex;
+        background-color: var(--Text-Co-White);
+        max-width: clamp(65rem, 1vw, 5rem);
+        border-radius: 0 0 0 var(--border-radius);
+        right: 0;
+        padding: 25px;
+        align-items: center;
+        box-shadow: -10px 10px 25px rgba(255, 255, 255, 0.678);
+        h1 {
+            font-size: clamp(var(--size-16px-1rem), 2.5vw, var(--size-48px-3rem));
+            color: black;
+        }
+    }
+    /* Top-left-coroners */
+    .small_footer::before {
+        content: "";
+        position: absolute;
+        background-color: #ffffff00;
+        top: 0;
+        margin-left: -97px;
+        border-top-right-radius: var(--custom-border-radius);
+        width: var(--size-72px);
+        height: var(--size-64px-4rem);
+        /* outline: 1px solid rgb(235, 135, 135); */
+    }
+    .small_footer::before {
+        box-shadow: 20px -10px 0 5px var(--ba-Co);
+    }
+    /* Bottom-right-coroners */
+    .small_footer::after {
+        content: "";
+        position: relative;
+        background-color: #ffffff00;
+        bottom: -5.55rem;
+        margin-right: -0.5rem;
+        border-top-right-radius: var(--custom-border-radius);
+        width: var(--size-72px);
+        height: var(--size-64px-4rem);
+    }
+    .small_footer::after {
+        box-shadow: 20px -10px 0 5px var(--ba-Co);
+    }
+}
+
+@mixin L-Latop {
+    .small_footer {
+        position: absolute;
+        display: flex;
+        background-color: var(--Text-Co-White);
+        max-width: 500px;
+        border-radius: 0 40px;
+        right: 0;
+        padding: 25px;
+        align-items: center;
+        box-shadow: -10px 10px 25px var(--ba-Co-DropShadow);
+        /* outline: 1px solid red; */
+        h1 {
+            font-size: clamp(1.5rem, 1.5vw, 2.5rem);
+            color: black;
+        }
+    }
+    /* Top-left-coroners */
+    .small_footer:before {
+        content: "";
+        position: absolute;
+        background-color: #ffffff00;
+        top: 1px;
+        margin-left: -65px;
+        border-top-right-radius: var(--custom-border-radius);
+        max-width: var(--size-40px);
+        height: var(--size-40px);
+    }
+
+    .small_footer:before {
+        box-shadow: 15px -6px 0 5px #ffffff;
+    }
+
+    /* Bottom-right-coroners */
+    .small_footer::after {
+        content: "";
+        position: relative;
+
+        background-color: #ffffff00;
+        bottom: -4.02rem;
+        left: 1rem;
+        border-top-right-radius: var(--custom-border-radius);
+        max-width: var(--size-40px);
+        height: var(--size-40px);
+        /* outline: 0.5px solid red; */
+    }
+    .small_footer::after {
+        box-shadow: 21px -10px 0 7px #ffffff;
+    }
+}
+
+@mixin Latop {
+    .small_footer {
+        position: absolute;
+        display: flex;
+        background-color: var(--Text-Co-White);
+        max-width: 500px;
+        border-radius: 0 40px;
+        right: 0;
+        padding: 25px;
+        align-items: center;
+        box-shadow: -10px 10px 15px var(--ba-Co-DropShadow);
+        /* outline: 1px solid red; */
+        p {
+            font-size: clamp(1rem, 2vw, 2.5rem);
+            color: black;
+        }
+    }
+    /* Top-left-coroners */
+    .small_footer:before {
+        content: "";
+        position: absolute;
+        background-color: #ffffff00;
+        top: 1px;
+        margin-left: -65px;
+        border-top-right-radius: var(--custom-border-radius);
+        max-width: var(--size-40px);
+        height: var(--size-40px);
+    }
+
+    .small_footer:before {
+        box-shadow: 15px -10px 0 5px #ffffff;
+    }
+
+    /* Bottom-right-coroners */
+    .small_footer::after {
+        content: "";
+        position: relative;
+        background-color: #ffffff00;
+        bottom: -64.25px;
+        left: 15.8px;
+        margin-left: -10px;
+        border-top-right-radius: var(--custom-border-radius);
+        max-width: var(--size-40px);
+        height: var(--size-40px);
+    }
+    .small_footer::after {
+        box-shadow: 20px -10px 0 6px #ffffff;
+    }
+}
+
+@mixin Tablet {
+    .small_footer {
+        display: none;
+    }
+}
