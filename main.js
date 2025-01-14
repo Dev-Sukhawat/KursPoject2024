@@ -35,12 +35,12 @@ if (window.location.pathname.endsWith('index.html')) {
                     pictureData.forEach((picture) => {
                         const img = document.createElement('img');
                         img.classList.add("wallpaper")
-                        // img.className = "wallpaper";
                         img.src = picture.src;
                         img.alt = picture.title;
                         img.style.width = "100%";
 
                         const imgH = document.createElement('h1');
+                        imgH.classList.add = 'H1Name';
                         imgH.className = 'H1Name';
                         imgH.textContent = picture.title;
 
@@ -48,6 +48,48 @@ if (window.location.pathname.endsWith('index.html')) {
                         HeroImgSection.appendChild(img);
                         NaHeroImg.appendChild(imgH);
                     });
+
+                    let myIndex = 0;
+                    heroImgSlider();
+                    heroImgTextSlider()
+
+                    function heroImgSlider() {
+                        let i;
+                        const imgCon = document.getElementsByClassName("hero_IMG")[0];
+                        const x = imgCon.querySelectorAll("img");
+                        // console.log(x);
+
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+
+                        console.log("img before ++", myIndex);
+                        myIndex++;
+                        console.log("img after ++", myIndex);
+
+                        if (myIndex > x.length) { myIndex = 1 }
+                        x[myIndex - 1].style.display = "block";
+                        setTimeout(heroImgSlider, 5000); // Change image every 5 seconds
+                    }
+
+                    function heroImgTextSlider() {
+                        let i;
+                        const imgCon = document.getElementsByClassName("NaHeroImg")[0];
+                        const x = imgCon.querySelectorAll("h1");
+                        // console.log(x);
+
+                        for (i = 0; i < x.length; i++) {
+                            x[i].style.display = "none";
+                        }
+
+                        console.log("ImgText before ++", myIndex);
+
+                        if (myIndex > x.length) { myIndex = 1 }
+                        x[myIndex - 1].style.display = "block";
+                        setTimeout(heroImgTextSlider, 5000); // Change image every 5 seconds
+                        myIndex++;
+                        console.log("ImgText after ++", myIndex);
+                    }
                 })
                 .catch((error) => {
                     console.error('Error rendering pictures:', error);
@@ -56,33 +98,6 @@ if (window.location.pathname.endsWith('index.html')) {
         } else {
             console.error('This script is designed to run in the browser, not Node.js.');
         }
-    }
-
-    let myIndex = 0;
-    carousel();
-
-    function carousel() {
-        let i;
-        const imgCon = document.getElementsByClassName("hero_IMG")[0];
-        const x = imgCon.querySelectorAll("img");
-        // console.log(x);
-        console.log(Array.from(x));
-
-        for (i = 0; i < x.length; i++) {
-            x[i].style.display = "none";
-            console.log(x);
-
-        }
-        myIndex++;
-
-        // if ((myIndex > x.length)) {
-
-        // }
-        console.log(myIndex);
-        console.log(x);
-        if (myIndex > x.length) { myIndex = 1 }
-        x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 5000); // Change image every 5 seconds
     }
 
 } else {
