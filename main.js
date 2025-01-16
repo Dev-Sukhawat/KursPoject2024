@@ -57,18 +57,16 @@ if (window.location.pathname.endsWith('index.html')) {
                         let i;
                         const imgCon = document.getElementsByClassName("hero_IMG")[0];
                         const x = imgCon.querySelectorAll("img");
-                        // console.log(x);
 
                         for (i = 0; i < x.length; i++) {
                             x[i].style.display = "none";
                         }
 
                         console.log("img before ++", myIndex);
-                        myIndex++;
+                        // myIndex++;
                         console.log("img after ++", myIndex);
 
-                        if (myIndex > x.length) { myIndex = 1 }
-                        x[myIndex - 1].style.display = "block";
+                        x[myIndex].style.display = "block";
                         setTimeout(heroImgSlider, 5000); // Change image every 5 seconds
                     }
 
@@ -76,7 +74,6 @@ if (window.location.pathname.endsWith('index.html')) {
                         let i;
                         const imgCon = document.getElementsByClassName("NaHeroImg")[0];
                         const x = imgCon.querySelectorAll("h1");
-                        // console.log(x);
 
                         for (i = 0; i < x.length; i++) {
                             x[i].style.display = "none";
@@ -84,10 +81,13 @@ if (window.location.pathname.endsWith('index.html')) {
 
                         console.log("ImgText before ++", myIndex);
 
-                        if (myIndex > x.length) { myIndex = 1 }
-                        x[myIndex - 1].style.display = "block";
+                        if (myIndex === x.length) { myIndex = 0 }
+                        x[myIndex].style.display = "block";
                         setTimeout(heroImgTextSlider, 5000); // Change image every 5 seconds
                         myIndex++;
+                        if (!myIndex%x.length) {
+                            myIndex = 0;
+                        }
                         console.log("ImgText after ++", myIndex);
                     }
                 })
