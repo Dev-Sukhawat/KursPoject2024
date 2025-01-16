@@ -94,6 +94,7 @@
             overflow: hidden;
             width: 500px;
             height: 100%;
+            transition: all 0.5s ease-out;
             text-align: center;
             align-items: end;
 
@@ -114,6 +115,7 @@
     }
 
     .boxImg:hover {
+        transform: scale(1.2,1.2);
         img {
             filter: grayscale(0%);
             cursor: pointer;
@@ -167,6 +169,7 @@
             height: 100%;
             text-align: center;
             align-items: end;
+            transition: all 0.5s ease-out;
 
             .imgH {
                 position: absolute;
@@ -184,11 +187,10 @@
                 border-radius: var(--border-radius);
                 width: 100%;
                 display: block;
-                transition: 0.5s ease-in-out;
+                transition: all 0.5s ease-in-out;
                 box-shadow: 5px 1px red;
                 filter: grayscale(90%);
             }
-
             video:hover {
                 filter: grayscale(0%);
                 cursor: pointer;
