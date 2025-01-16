@@ -53,6 +53,7 @@ function videoElement() {
                         videoElement.loop = true; // Loop-videon
                         videoElementH.style.opacity = '1'; // Göra att det syns
                         videoElement.style.filter = 'grayscale(0%)'; //Göra att det blir vanligt
+                        box.style.transform = "scale(1.2,1.2)";
                     };
 
                     box.onmouseout = function () {
@@ -60,6 +61,7 @@ function videoElement() {
                         videoElement.currentTime; // returnerar det aktuella uppspelningsläget för videon i sekunder
                         videoElementH.style.opacity = '0'; // Göra att det inte syns
                         videoElement.style.filter = 'grayscale(100%)'; //Göra att det blir gråfärgade
+                        box.style.transform = "scale(1,1)";
                     };
                 });
             })
