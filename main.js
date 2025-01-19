@@ -62,10 +62,7 @@ if (window.location.pathname.endsWith('index.html')) {
                             x[i].style.display = "none";
                         }
 
-                        console.log("img before ++", myIndex);
-                        // myIndex++;
-                        console.log("img after ++", myIndex);
-
+                        if (myIndex === x.length) { myIndex = 0 }
                         x[myIndex].style.display = "block";
                         setTimeout(heroImgSlider, 5000); // Change image every 5 seconds
                     }
@@ -79,16 +76,13 @@ if (window.location.pathname.endsWith('index.html')) {
                             x[i].style.display = "none";
                         }
 
-                        console.log("ImgText before ++", myIndex);
-
                         if (myIndex === x.length) { myIndex = 0 }
                         x[myIndex].style.display = "block";
                         setTimeout(heroImgTextSlider, 5000); // Change image every 5 seconds
                         myIndex++;
-                        if (!myIndex%x.length) {
+                        if (!myIndex % x.length) {
                             myIndex = 0;
                         }
-                        console.log("ImgText after ++", myIndex);
                     }
                 })
                 .catch((error) => {
