@@ -33,7 +33,14 @@ function videoElement() {
                     const imgH = document.createElement('h1');
                     imgH.className = 'imgH';
                     imgH.id = 'imgH';
-                    imgH.textContent = video.title;
+                    let textVideoTitle = video.title
+                        .split('-')
+                        .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+                        .join(' ');
+
+                    console.log(textVideoTitle);
+
+                    imgH.textContent = textVideoTitle;
 
                     boxVideo.appendChild(videoElemnt);
                     boxVideo.appendChild(imgH);
