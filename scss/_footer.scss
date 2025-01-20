@@ -345,7 +345,7 @@
         flex-direction: column;
         align-items: center;
         position: relative;
-        bottom: 0px;
+        bottom: 53px;
         left: 0px;
         padding: var(--size-16px-1rem);
         background-image: url(./gallery/background/footer.png);
@@ -401,7 +401,9 @@
         flex-direction: column;
         align-items: center;
         position: relative;
-        bottom: -10rem;
+        bottom: auto;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
         list-style: none;
         text-decoration: none;
         padding: var(--size-16px-1rem);
