@@ -21,24 +21,21 @@ function videoElement() {
                 // Loopa igenom JSON-data och skapa element
                 videoData.forEach((video) => {
                     const boxVideo = document.createElement('div');
-                    boxVideo.className = 'boxVideo';
-                    boxVideo.id = 'boxVideo';
+                    boxVideo.classList.add("boxVideo");
 
                     const videoElemnt = document.createElement('video');
-                    videoElemnt.id = 'video';
+                    videoElemnt.classList.add("video");
                     videoElemnt.src = video.src;
                     videoElemnt.alt = video.title;
                     // videoElemnt.autoplay = false;
 
                     const imgH = document.createElement('h1');
-                    imgH.className = 'imgH';
-                    imgH.id = 'imgH';
+                    imgH.classList.add("imgH");
                     let textVideoTitle = video.title
                         .split('-')
                         .map(word => word.charAt(0).toUpperCase() + word.slice(1))
                         .join(' ');
 
-                    console.log(textVideoTitle);
 
                     imgH.textContent = textVideoTitle;
 
@@ -51,8 +48,8 @@ function videoElement() {
                 const videoBox = document.querySelectorAll('.boxVideo');
 
                 videoBox.forEach((box) => {
-                    const videoElement = box.querySelector('#video');
-                    const videoElementH = box.querySelector('#imgH')
+                    const videoElement = box.querySelector('.video');
+                    const videoElementH = box.querySelector('.imgH')
 
                     box.onmouseover = function () {
                         videoElement.play(); // Spela upp videon
