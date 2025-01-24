@@ -14,6 +14,7 @@
             border: 1px solid var(--ba-Co);
             border-radius: var(--border-radius);
             max-width: 100%;
+            height: 101%;
         }
         video {
             border: 1px solid var(--ba-Co);
@@ -192,7 +193,7 @@
         width: 50px;
         height: 50px;
         top: -50px;
-        left: 94.4%;
+        right: 1px;
         background-color: rgba(255, 255, 255, 0);
     }
 
