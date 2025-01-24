@@ -4,7 +4,7 @@
         display: flex;
         background-color: var(--Text-Co-White);
         max-width: clamp(65rem, 1vw, 5rem);
-        border-radius: 0 0 0 var(--border-radius);
+        border-radius: 0 0 0 var(--img-border-radius);
         right: 0;
         padding: 25px;
         align-items: center;
@@ -51,7 +51,7 @@
         display: flex;
         background-color: var(--Text-Co-White);
         max-width: 500px;
-        border-radius: 0 40px;
+        border-radius: 0 var(--border-radius);
         right: 0;
         padding: 25px;
         align-items: center;
@@ -102,7 +102,7 @@
         display: flex;
         background-color: var(--Text-Co-White);
         max-width: 500px;
-        border-radius: 0 40px;
+        border-radius: 0 var(--border-radius);
         right: 0;
         padding: 25px;
         align-items: center;

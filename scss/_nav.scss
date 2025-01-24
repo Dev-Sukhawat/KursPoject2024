@@ -13,16 +13,17 @@
             position: relative;
             width: 100%;
             height: 100%;
-            justify-content: space-around;
+            justify-content: space-between;
             font-family: "Chakra Petch", sans-serif;
             font-style: normal;
             padding: var(--size-16px-1rem);
-            gap: 10px;
+            gap: 0;
         }
 
         .are {
             background-color: var(--Text-Co-Black);
             color: var(--Text-Co-White);
+            outline: 1px solid var(--Text-Co-White);
         }
         li {
             list-style: none;
@@ -98,14 +99,14 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            justify-content: space-around;
-            padding: var(--size-16px-1rem);
-            gap: 5px;
+            justify-content: space-between;
+            padding: 0;
         }
 
         .are {
             background-color: var(--Text-Co-Black);
             color: var(--Text-Co-White);
+            outline: 1px solid var(--Text-Co-White);
         }
 
         .are_Icons {
@@ -123,7 +124,7 @@
                 color: var(--Text-Co-Black);
                 width: 100%;
                 height: 100%;
-                padding: var(--size-16px-1rem);
+                padding: var(--size-24px);
                 text-decoration: none;
                 align-content: center;
                 text-align: center;
@@ -133,6 +134,7 @@
             summary:hover {
                 background-color: var(--Text-Co-Black);
                 color: var(--Text-Co-White);
+                outline: 1px solid var(--Text-Co-White);
                 cursor: pointer;
             }
 
@@ -185,9 +187,8 @@
             position: absolute;
             width: 100%;
             height: 100%;
-            justify-content: space-around;
+            justify-content: space-between;
             padding: var(--size-16px-1rem);
-            gap: 5px;
         }
 
         .are {

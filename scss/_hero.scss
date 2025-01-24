@@ -80,6 +80,7 @@
             display: grid;
             grid-template-columns: 250px 1fr;
             margin: 0.5rem;
+            padding-right: 1rem;
             padding-bottom: 1rem;
             overflow: hidden;
             gap: var(--gap-16-px);
@@ -89,7 +90,7 @@
                 display: block;
                 width: 100%;
                 height: 100%;
-                border-radius: var(--border-radius);
+                border-radius: var(--img-border-radius);
             }
 
             h2 {
@@ -97,8 +98,8 @@
             }
 
             p {
-                font-size: clamp(1rem, 1vw, 2rem);
-                line-height: 1.5rem;
+                font-size: clamp(1rem, 1.2vw, 2rem);
+                line-height: 1.7rem;
             }
         }
     }
@@ -137,6 +138,7 @@
             display: grid;
             grid-template-columns: 250px 1fr;
             margin: 0.5rem;
+            padding-left: 1rem;
             padding-bottom: 1rem;
             overflow: hidden;
             gap: var(--gap-16-px);
@@ -146,7 +148,7 @@
                 display: block;
                 width: 100%;
                 height: auto;
-                border-radius: var(--border-radius);
+                border-radius: var(--img-border-radius);
             }
         }
         .articleText {
@@ -162,7 +164,7 @@
             }
             p {
                 font-size: clamp(1rem, 1vw, 2rem);
-                line-height: 1.5rem;
+                line-height: 1.7rem;
             }
         }
     }

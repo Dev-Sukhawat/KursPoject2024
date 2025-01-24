@@ -25,7 +25,7 @@
   --gap-24-px: 1.5rem;
   --gap-32-px: 2rem;
   --small-gap-24px: 1.5rem;
-  --border-radius: 45px;
+  --border-radius: 35px;
   --img-border-radius: 30px;
   --custom-border-radius: 80%;
   --Text-Co-White: #ffffff;
@@ -68,15 +68,16 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
-  justify-content: space-around;
+  justify-content: space-between;
   font-family: "Chakra Petch", sans-serif;
   font-style: normal;
   padding: var(--size-16px-1rem);
-  gap: 10px;
+  gap: 0;
 }
 .navBar .are {
   background-color: var(--Text-Co-Black);
   color: var(--Text-Co-White);
+  outline: 1px solid var(--Text-Co-White);
 }
 .navBar li {
   list-style: none;
@@ -133,7 +134,7 @@ body {
   display: flex;
   background-color: var(--Text-Co-White);
   max-width: clamp(65rem, 1vw, 5rem);
-  border-radius: 0 0 0 var(--border-radius);
+  border-radius: 0 0 0 var(--img-border-radius);
   right: 0;
   padding: 25px;
   align-items: center;
@@ -255,6 +256,7 @@ body {
   display: grid;
   grid-template-columns: 250px 1fr;
   margin: 0.5rem;
+  padding-right: 1rem;
   padding-bottom: 1rem;
   overflow: hidden;
   gap: var(--gap-16-px);
@@ -264,14 +266,14 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  border-radius: var(--border-radius);
+  border-radius: var(--img-border-radius);
 }
 .gameCategory .gameBox h2 {
   font-size: clamp(1.5rem, 1.5vw, 2rem);
 }
 .gameCategory .gameBox p {
-  font-size: clamp(1rem, 1vw, 2rem);
-  line-height: 1.5rem;
+  font-size: clamp(1rem, 1.2vw, 2rem);
+  line-height: 1.7rem;
 }
 
 .gameCategory::after {
@@ -308,6 +310,7 @@ body {
   display: grid;
   grid-template-columns: 250px 1fr;
   margin: 0.5rem;
+  padding-left: 1rem;
   padding-bottom: 1rem;
   overflow: hidden;
   gap: var(--gap-16-px);
@@ -317,7 +320,7 @@ body {
   display: block;
   width: 100%;
   height: auto;
-  border-radius: var(--border-radius);
+  border-radius: var(--img-border-radius);
 }
 .articleCategory .articleText h1 {
   font-size: clamp(2rem, 2.5vw, 2.5rem);
@@ -331,7 +334,7 @@ body {
 }
 .articleCategory .articleText p {
   font-size: clamp(1rem, 1vw, 2rem);
-  line-height: 1.5rem;
+  line-height: 1.7rem;
 }
 
 .articleCategory::after {
@@ -391,7 +394,7 @@ body {
   display: grid;
   grid-template-columns: 250px 1fr;
   margin: 1rem;
-  background-color: var(--ba-Co-Tr);
+  background-color: var(--ba-Co);
   border-radius: var(--border-radius);
   border: 10px solid white;
 }
@@ -445,7 +448,7 @@ body {
 .imgGallery .boxImg {
   display: flex;
   border: 1px solid var(--Text-Co-White);
-  border-radius: var(--border-radius);
+  border-radius: var(--img-border-radius);
   overflow: hidden;
   width: 500px;
   height: 100%;
@@ -492,7 +495,7 @@ body {
   flex-direction: column;
   width: 100%;
   padding: var(--size-32px-2rem);
-  border-radius: var(--border-radius);
+  border-radius: var(--img-border-radius);
   background-image: url(./gallery/background/movie.png);
   background-repeat: no-repeat;
   background-size: 100% 100%;
@@ -577,7 +580,7 @@ body {
   display: flex;
   gap: 1rem;
   width: 100%;
-  background-color: var(--ba-Co-Tr);
+  background-color: var(--ba-Co);
   border-radius: var(--border-radius);
   border: 5px solid #fff;
 }
@@ -617,9 +620,6 @@ body {
 
 .historySection {
   height: 100%;
-  border-radius: var(--border-radius);
-  border: 1px solid rgba(255, 255, 255, 0.137);
-  background-color: rgba(255, 255, 255, 0.137);
   display: grid;
   grid-template-columns: 1fr;
   justify-items: center;
@@ -806,13 +806,13 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    justify-content: space-around;
-    padding: var(--size-16px-1rem);
-    gap: 5px;
+    justify-content: space-between;
+    padding: 0;
   }
   .navBar .are {
     background-color: var(--Text-Co-Black);
     color: var(--Text-Co-White);
+    outline: 1px solid var(--Text-Co-White);
   }
   .navBar .are_Icons {
     display: none;
@@ -830,7 +830,7 @@ body {
     color: var(--Text-Co-Black);
     width: 100%;
     height: 100%;
-    padding: var(--size-16px-1rem);
+    padding: var(--size-24px);
     text-decoration: none;
     align-content: center;
     text-align: center;
@@ -839,6 +839,7 @@ body {
   .navBar li summary:hover {
     background-color: var(--Text-Co-Black);
     color: var(--Text-Co-White);
+    outline: 1px solid var(--Text-Co-White);
     cursor: pointer;
   }
   .navBar li details {
@@ -874,7 +875,7 @@ body {
     display: flex;
     background-color: var(--Text-Co-White);
     max-width: 500px;
-    border-radius: 0 40px;
+    border-radius: 0 var(--border-radius);
     right: 0;
     padding: 25px;
     align-items: center;
@@ -954,7 +955,7 @@ body {
     display: grid;
     grid-template-columns: 250px 1fr;
     margin: 1rem;
-    background-color: var(--ba-Co-Tr);
+    background-color: var(--ba-Co);
     border-radius: var(--border-radius);
     border: 10px solid white;
   }
@@ -1046,9 +1047,8 @@ body {
     position: absolute;
     width: 100%;
     height: 100%;
-    justify-content: space-around;
+    justify-content: space-between;
     padding: var(--size-16px-1rem);
-    gap: 5px;
   }
   .navBar .are {
     background-color: var(--Text-Co-Black);
@@ -1114,7 +1114,7 @@ body {
     display: flex;
     background-color: var(--Text-Co-White);
     max-width: 500px;
-    border-radius: 0 40px;
+    border-radius: 0 var(--border-radius);
     right: 0;
     padding: 25px;
     align-items: center;
@@ -2019,7 +2019,7 @@ body {
     text-transform: capitalize;
     text-align: center;
     padding: 1rem;
-    color: var(--Text-Co-Black);
+    color: var(--Text-Co-White);
   }
   body.index-page .mainMovies .moviesCategory {
     display: grid;
@@ -2032,7 +2032,7 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     margin: 0.5rem;
-    background-color: var(--ba-Co-Tr);
+    background-color: var(--ba-Co);
     border-radius: var(--border-radius);
     border: 10px solid white;
   }
