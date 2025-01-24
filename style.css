@@ -71,8 +71,6 @@ body {
   justify-content: space-between;
   font-family: "Chakra Petch", sans-serif;
   font-style: normal;
-  padding: var(--size-16px-1rem);
-  gap: 0;
 }
 .navBar .are {
   background-color: var(--Text-Co-Black);
@@ -101,6 +99,7 @@ body {
 .navBar li summary:hover {
   background-color: var(--Text-Co-Black);
   color: var(--Text-Co-White);
+  outline: 1px solid var(--Text-Co-White);
   cursor: pointer;
 }
 .navBar li details {
@@ -257,10 +256,12 @@ body {
   grid-template-columns: 250px 1fr;
   margin: 0.5rem;
   padding-right: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
   overflow: hidden;
   gap: var(--gap-16-px);
-  border-bottom: 1px solid #000000;
+}
+.gameCategory .gameBox .gameText {
+  padding-right: 1rem;
 }
 .gameCategory .gameBox img {
   display: block;
@@ -311,10 +312,9 @@ body {
   grid-template-columns: 250px 1fr;
   margin: 0.5rem;
   padding-left: 1rem;
-  padding-bottom: 1rem;
+  padding-bottom: 1.5rem;
   overflow: hidden;
   gap: var(--gap-16-px);
-  border-bottom: 1px solid #000000;
 }
 .articleCategory .articleBox > img {
   display: block;
@@ -1219,7 +1219,6 @@ body {
     padding-bottom: 1rem;
     overflow: hidden;
     gap: var(--gap-16-px);
-    border-bottom: 1px solid #000000;
   }
   .gameCategory .gameBox img {
     display: block;
@@ -1269,7 +1268,6 @@ body {
     margin: 0.5rem;
     padding-bottom: 1rem;
     gap: var(--gap-16-px);
-    border-bottom: 1px solid #000000;
   }
   .articleCategory .articleBox > img {
     display: block;
@@ -1311,7 +1309,8 @@ body {
     position: relative;
     top: 115rem;
     width: 100%;
-    border-radius: var(--border-radius);
+    border-top: 5px solid black;
+    border-radius: 0;
     background-image: none;
   }
   .mainMovies > h1 {
@@ -1333,8 +1332,6 @@ body {
     grid-template-columns: 250px 1fr;
     margin: 1rem;
     background-color: var(--ba-Co-Tr);
-    border-radius: var(--border-radius);
-    border: 10px solid rgb(5, 5, 5);
   }
   .mainMovies .moviesBox img {
     display: block;
@@ -1640,7 +1637,7 @@ body {
     position: relative;
     top: 120rem;
     width: 100%;
-    border-radius: var(--border-radius);
+    border-radius: 0;
     background-image: none;
   }
   .mainMovies > h1 {

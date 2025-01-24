@@ -115,7 +115,7 @@
     }
 
     .boxImg:hover {
-        transform: scale(1.2,1.2);
+        transform: scale(1.2, 1.2);
         img {
             filter: grayscale(0%);
             cursor: pointer;
@@ -413,7 +413,8 @@
         position: relative;
         top: 115rem;
         width: 100%;
-        border-radius: var(--border-radius);
+        border-top: 5px solid black;
+        border-radius: 0;
         background-image: none;
 
         > h1 {
@@ -437,8 +438,6 @@
             grid-template-columns: 250px 1fr;
             margin: 1rem;
             background-color: var(--ba-Co-Tr);
-            border-radius: var(--border-radius);
-            border: 10px solid rgb(5, 5, 5);
 
             img {
                 display: block;
@@ -472,7 +471,7 @@
         position: relative;
         top: 120rem;
         width: 100%;
-        border-radius: var(--border-radius);
+        border-radius: 0;
         background-image: none;
 
         > h1 {
