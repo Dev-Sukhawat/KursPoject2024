@@ -693,13 +693,13 @@
                 width: 100%;
                 display: block;
                 transition: 0.5s ease-in-out;
-                filter: grayscale(0%);
+                filter: grayscale(100%);
             }
         }
 
         .boxImg:hover {
             img {
-                filter: grayscale(100%);
+                filter: grayscale(0%);
                 cursor: pointer;
             }
 
@@ -758,7 +758,7 @@
 
             .imgH {
                 position: absolute;
-                font-size: 0px;
+                font-size: clamp(0.5rem, 3vw, 2rem);
                 opacity: 0;
                 transition: 0.8s ease-in-out;
                 cursor: pointer;
