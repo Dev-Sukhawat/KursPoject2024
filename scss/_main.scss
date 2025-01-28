@@ -758,6 +758,7 @@
 
             .imgH {
                 position: absolute;
+                width: auto;
                 font-size: clamp(0.5rem, 3vw, 2rem);
                 opacity: 0;
                 transition: 0.8s ease-in-out;
