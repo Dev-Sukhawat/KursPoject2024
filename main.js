@@ -1,7 +1,13 @@
 // Kontrollera om vi är på index.html, och påverkar på phone size media
-console.log("main.js");
 if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/') ) {
     document.body.classList.add('index-page');
+
+    const baseURL = window.location.hostname === "127.0.0.1"
+  ? "" // Lokalt: använd bara relativa sökvägar
+  : "/KursPoject2024"; // GitHub Pages: använd basen för projektet
+
+    const imgPath = `${baseURL}/gallery/img/galactic-night-sky-astronomy-science-combined-generative-ai.jpg`;
+    document.querySelector("img").src = imgPath;
 
     galleryElement()
     function galleryElement() {
