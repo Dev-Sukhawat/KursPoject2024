@@ -46,6 +46,9 @@ body {
 
 // M-Latop
 @media only screen and (max-width: 1535px) {
+    body{
+        margin: 0.5rem 0 0 0;
+    }
     @include mi-M-Latop();
 
     @include ft-M-Latop();
