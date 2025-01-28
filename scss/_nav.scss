@@ -266,7 +266,7 @@
         border-radius: var(--border-radius);
         width: 100%;
         height: var(--size-80px-5rem);
-        top: 1rem;
+        top: 0;
         left: 0px;
 
         > ul {
@@ -276,7 +276,7 @@
             height: auto;
             /* align-items: center; */
             justify-content: space-evenly;
-            padding: var(--size-16px-1rem);
+            padding: 0;
             gap: 0px;
         }
 
@@ -291,14 +291,13 @@
         > a,
         summary {
             display: grid;
-            top: 0;
             border-radius: var(--border-radius);
             background-color: var(--ba-Co-Tr);
             font-size: clamp(1rem, 2vw, 2rem);
             color: var(--Text-Co-Black);
             width: 100%;
             height: auto;
-            padding: 0.5rem;
+            padding: clamp(00.5rem, 3vw, 11.5rem);
             text-decoration: none;
             align-content: center;
             text-align: center;
@@ -380,7 +379,6 @@
             > li > a,
             > summary {
                 display: grid;
-                top: 0;
                 border-radius: var(--border-radius);
                 background-color: var(--ba-Co-Tr);
                 font-size: clamp(1rem, 2vw, 2rem);
