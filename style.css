@@ -2577,7 +2577,7 @@ body {
     line-height: 1rem;
   }
   body.other-page .historySection .text:hover {
-    box-shadow: rgb(1, 25, 46) 3px 3px 6px 0px inset, rgba(0, 60, 255, 0.932) -3px -3px 6px 1px inset;
+    box-shadow: none;
   }
   body.other-page .historySection::before {
     display: none;
