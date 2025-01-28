@@ -1,5 +1,6 @@
 // Kontrollera om vi är på index.html, och påverkar på phone size media
-if (window.location.pathname.endsWith('index.html')) {
+console.log("main.js");
+if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/') ) {
     document.body.classList.add('index-page');
 
     galleryElement()
