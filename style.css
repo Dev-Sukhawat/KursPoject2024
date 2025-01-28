@@ -936,6 +936,9 @@ body {
   }
 }
 @media only screen and (max-width: 1535px) {
+  body {
+    margin: 0.5rem 0 0 0;
+  }
   /* Main Movies in the index.html file */
   .mainMovies {
     position: relative;
@@ -1431,7 +1434,7 @@ body {
     border-radius: var(--border-radius);
     width: 100%;
     height: var(--size-80px-5rem);
-    top: 1rem;
+    top: 0;
     left: 0px;
   }
   .navBar > ul {
@@ -1441,7 +1444,7 @@ body {
     height: auto;
     /* align-items: center; */
     justify-content: space-evenly;
-    padding: var(--size-16px-1rem);
+    padding: 0;
     gap: 0px;
   }
   .navBar .are {
@@ -1454,14 +1457,13 @@ body {
   .navUl > li > a,
   .navUl > li summary {
     display: grid;
-    top: 0;
     border-radius: var(--border-radius);
     background-color: var(--ba-Co-Tr);
     font-size: clamp(1rem, 2vw, 2rem);
     color: var(--Text-Co-Black);
     width: 100%;
     height: auto;
-    padding: 0.5rem;
+    padding: clamp(0.5rem, 3vw, 11.5rem);
     text-decoration: none;
     align-content: center;
     text-align: center;
@@ -1839,7 +1841,6 @@ body {
   body.index-page .navBar .navUl > li > li > a,
   body.index-page .navBar .navUl > li > summary {
     display: grid;
-    top: 0;
     border-radius: var(--border-radius);
     background-color: var(--ba-Co-Tr);
     font-size: clamp(1rem, 2vw, 2rem);
@@ -2163,7 +2164,6 @@ body {
   body.other-page .navBar .navUl > li > li > a,
   body.other-page .navBar .navUl > li > summary {
     display: grid;
-    top: 0;
     border-radius: var(--border-radius);
     background-color: var(--ba-Co-Tr);
     font-size: clamp(1rem, 2vw, 2rem);
