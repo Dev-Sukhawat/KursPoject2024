@@ -16,17 +16,15 @@ if (window.location.pathname.endsWith('index.html') || window.location.pathname.
                 console.log("Mutation observerade:", mutation);
             });
 
-            const wallpaperElement = document.querySelector(".wallpaper");
+            // const wallpaperElement = document.querySelector(".wallpaper");
             if (wallpaperElement) {
                 wallpaperElement.src = imgPath;
                 observer.disconnect(); // Stoppa observering
-                console.log("Elementet '.wallpaper' hittades och bildvägen har satts!");
+                // console.log("Elementet '.wallpaper' hittades och bildvägen har satts!");
             }
         });
         observer.observe(document.body, { childList: true, subtree: true });
     }
-
-
 
     function galleryElement() {
         // Kontrollera om koden körs i webbläsaren
