@@ -8,16 +8,21 @@ if (window.location.pathname.endsWith('index.html') || window.location.pathname.
         const baseURL = "/KursPoject2024"; // GitHub Pages: använd basen för projektet
         const imgPath = `${baseURL}/gallery/img/galactic-night-sky-astronomy-science-combined-generative-ai.jpg`;
 
-        galleryElement();
+        galleryElement(); // Skapar galleriet
 
-        // Kontrollera om .wallpaper finns innan du ändrar src
-        const wallpaperElement = document.querySelector(".wallpaper");
-        if (wallpaperElement) {
-            wallpaperElement.src = imgPath;
-        } else {
-            console.warn("Elementet '.wallpaper' hittades inte!");
-        }
+        // Observera DOM-förändringar och vänta på att .wallpaper skapas
+        const observer = new MutationObserver(() => {
+            const wallpaperElement = document.querySelector(".wallpaper");
+            if (wallpaperElement) {
+                wallpaperElement.src = imgPath;
+                observer.disconnect(); // Sluta observera efter att vi hittat elementet
+                console.log("Elementet '.wallpaper' hittades och bildvägen har satts!");
+            }
+        });
+
+        observer.observe(document.body, { childList: true, subtree: true });
     }
+
 
 
     function galleryElement() {
