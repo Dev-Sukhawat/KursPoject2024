@@ -1,17 +1,24 @@
 // Kontrollera om vi är på index.html, och påverkar på phone size media
-if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/') ) {
+if (window.location.pathname.endsWith('index.html') || window.location.pathname.endsWith('/')) {
     document.body.classList.add('index-page');
 
-    if ( window.location.hostname === "127.0.0.1") {
-        galleryElement()
+    if (window.location.hostname === "127.0.0.1") {
+        galleryElement();
     } else {
-        const baseURL = window.location.hostname === "127.0.0.1"
-        ? "" // Lokalt: använd bara relativa sökvägar
-        : "/KursPoject2024"; // GitHub Pages: använd basen för projektet
+        const baseURL = "/KursPoject2024"; // GitHub Pages: använd basen för projektet
         const imgPath = `${baseURL}/gallery/img/galactic-night-sky-astronomy-science-combined-generative-ai.jpg`;
-        galleryElement()
-        document.querySelector(".wallpaper").src = imgPath;
+
+        galleryElement();
+
+        // Kontrollera om .wallpaper finns innan du ändrar src
+        const wallpaperElement = document.querySelector(".wallpaper");
+        if (wallpaperElement) {
+            wallpaperElement.src = imgPath;
+        } else {
+            console.warn("Elementet '.wallpaper' hittades inte!");
+        }
     }
+
 
     function galleryElement() {
         // Kontrollera om koden körs i webbläsaren
