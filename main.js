@@ -11,15 +11,18 @@ if (window.location.pathname.endsWith('index.html') || window.location.pathname.
         galleryElement(); // Skapar galleriet
 
         // Observera DOM-förändringar och vänta på att .wallpaper skapas
-        const observer = new MutationObserver(() => {
+        const observer = new MutationObserver((mutations) => {
+            mutations.forEach((mutation) => {
+                console.log("Mutation observerade:", mutation);
+            });
+
             const wallpaperElement = document.querySelector(".wallpaper");
             if (wallpaperElement) {
                 wallpaperElement.src = imgPath;
-                observer.disconnect(); // Sluta observera efter att vi hittat elementet
+                observer.disconnect(); // Stoppa observering
                 console.log("Elementet '.wallpaper' hittades och bildvägen har satts!");
             }
         });
-
         observer.observe(document.body, { childList: true, subtree: true });
     }
 
