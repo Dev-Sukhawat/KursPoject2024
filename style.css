@@ -1045,7 +1045,7 @@ body {
 }
 @media only screen and (max-width: 1160px) {
   body {
-    margin: var(--size-16px-1rem) 0 0 0;
+    margin: 0.5rem 0 0 0;
     background-color: var(--ba-Co);
   }
   .navBar {
