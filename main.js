@@ -13,10 +13,10 @@ if (window.location.pathname.endsWith('index.html') || window.location.pathname.
         // Observera DOM-förändringar och vänta på att .wallpaper skapas
         const observer = new MutationObserver((mutations) => {
             mutations.forEach((mutation) => {
-                console.log("Mutation observerade:", mutation);
+                // console.log("Mutation observerade:", mutation);
             });
 
-            // const wallpaperElement = document.querySelector(".wallpaper");
+            const wallpaperElement = document.querySelector(".wallpaper");
             if (wallpaperElement) {
                 wallpaperElement.src = imgPath;
                 observer.disconnect(); // Stoppa observering
