@@ -24,7 +24,6 @@
         border-top-right-radius: var(--custom-border-radius);
         width: var(--size-72px);
         height: var(--size-64px-4rem);
-        /* outline: 1px solid rgb(235, 135, 135); */
     }
     .small_footer::before {
         box-shadow: 20px -10px 0 5px var(--ba-Co);
@@ -56,7 +55,6 @@
         padding: 25px;
         align-items: center;
         box-shadow: -10px 10px 25px var(--ba-Co-DropShadow);
-        /* outline: 1px solid red; */
         h1 {
             font-size: clamp(1.5rem, 1.5vw, 2.5rem);
             color: black;
@@ -89,7 +87,6 @@
         border-top-right-radius: var(--custom-border-radius);
         max-width: var(--size-40px);
         height: var(--size-40px);
-        /* outline: 0.5px solid red; */
     }
     .small_footer::after {
         box-shadow: 21px -10px 0 7px #ffffff;
@@ -107,7 +104,6 @@
         padding: 25px;
         align-items: center;
         box-shadow: -10px 10px 15px var(--ba-Co-DropShadow);
-        /* outline: 1px solid red; */
         p {
             font-size: clamp(1rem, 2vw, 2.5rem);
             color: black;

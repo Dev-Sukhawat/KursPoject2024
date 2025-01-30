@@ -154,7 +154,6 @@ body {
   border-top-right-radius: var(--custom-border-radius);
   width: var(--size-72px);
   height: var(--size-64px-4rem);
-  /* outline: 1px solid rgb(235, 135, 135); */
 }
 
 .small_footer::before {
@@ -367,7 +366,6 @@ body {
   box-shadow: 10px 10px 0px 5px white;
 }
 
-/* Main Movies in the index.html file */
 .mainMovies {
   position: relative;
   top: 44rem;
@@ -420,7 +418,6 @@ body {
   line-height: 2rem;
 }
 
-/* mainIMG in the picture.html fill */
 .mainIMG {
   top: 6rem;
   position: relative;
@@ -488,7 +485,6 @@ body {
   z-index: 1;
 }
 
-/* mainVideo in the picture.html fill */
 .mainVideo {
   top: 6rem;
   position: relative;
@@ -889,7 +885,6 @@ body {
     padding: 25px;
     align-items: center;
     box-shadow: -10px 10px 25px var(--ba-Co-DropShadow);
-    /* outline: 1px solid red; */
   }
   .small_footer h1 {
     font-size: clamp(1.5rem, 1.5vw, 2.5rem);
@@ -919,7 +914,6 @@ body {
     border-top-right-radius: var(--custom-border-radius);
     max-width: var(--size-40px);
     height: var(--size-40px);
-    /* outline: 0.5px solid red; */
   }
   .small_footer::after {
     box-shadow: 21px -10px 0 7px #ffffff;
@@ -939,7 +933,6 @@ body {
   body {
     margin: 0.5rem 0 0 0;
   }
-  /* Main Movies in the index.html file */
   .mainMovies {
     position: relative;
     top: 44rem;
@@ -1134,7 +1127,6 @@ body {
     padding: 25px;
     align-items: center;
     box-shadow: -10px 10px 15px var(--ba-Co-DropShadow);
-    /* outline: 1px solid red; */
   }
   .small_footer p {
     font-size: clamp(1rem, 2vw, 2.5rem);
@@ -1313,12 +1305,10 @@ body {
     top: -50px;
     margin-left: -1px;
     background-color: rgba(255, 255, 255, 0);
-    /* outline: 1px solid red; */
   }
   .articleCategory::after {
     box-shadow: -10px 15px 0px 5px white;
     z-index: -1;
-    /* box-shadow: -5px 15px 0px 5px rgba(255, 18, 18, 0.418); */
   }
   .mainMovies {
     position: relative;
@@ -1442,7 +1432,6 @@ body {
     position: relative;
     width: auto;
     height: auto;
-    /* align-items: center; */
     justify-content: space-evenly;
     padding: 0;
     gap: 0px;
@@ -1644,12 +1633,10 @@ body {
     top: -50px;
     margin-left: -1px;
     background-color: rgba(255, 255, 255, 0);
-    /* outline: 1px solid red; */
   }
   .articleCategory::after {
     box-shadow: -10px 15px 0px 5px white;
     z-index: -1;
-    /* box-shadow: -5px 15px 0px 5px rgba(255, 18, 18, 0.418); */
   }
   .mainMovies {
     position: relative;
@@ -2129,8 +2116,6 @@ body {
   body.other-page {
     margin: 0px;
     background-color: var(--ba-Co);
-    /* mainIMG in the picture.html fill */
-    /* mainIMG in the picture.html fill */
   }
   body.other-page .navBar {
     display: grid;

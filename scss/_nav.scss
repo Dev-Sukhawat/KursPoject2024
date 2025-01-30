@@ -274,7 +274,6 @@
             position: relative;
             width: auto;
             height: auto;
-            /* align-items: center; */
             justify-content: space-evenly;
             padding: 0;
             gap: 0px;
@@ -347,7 +346,6 @@
 
 @mixin Phone {
     .navBar {
-        // outline: 1px solid red;
         display: grid;
         position: fixed;
         align-content: center;

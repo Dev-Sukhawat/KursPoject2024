@@ -1,5 +1,4 @@
 @mixin movies {
-    /* Main Movies in the index.html file */
     .mainMovies {
         position: relative;
         top: 44rem;
@@ -61,7 +60,6 @@
 }
 
 @mixin img {
-    /* mainIMG in the picture.html fill */
     .mainIMG {
         top: 6rem;
         position: relative;
@@ -134,7 +132,6 @@
 }
 
 @mixin video {
-    /* mainVideo in the picture.html fill */
     .mainVideo {
         top: 6rem;
         position: relative;
@@ -347,7 +344,6 @@
 
 // Media
 @mixin M-Latop {
-    /* Main Movies in the index.html file */
     .mainMovies {
         position: relative;
         top: 44rem;
@@ -644,7 +640,6 @@
 }
 
 @mixin Phone-img {
-    /* mainIMG in the picture.html fill */
     .mainIMG {
         top: 1rem;
         position: relative;
@@ -719,7 +714,6 @@
 }
 
 @mixin Phone-video {
-    /* mainIMG in the picture.html fill */
     .mainVideo {
         top: 1rem;
         position: relative;
