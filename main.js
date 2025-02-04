@@ -59,6 +59,7 @@ if (window.location.pathname.endsWith('index.html') || window.location.pathname.
                         const img = document.createElement('img');
                         img.classList.add("wallpaper")
                         img.src = picture.src;
+                        img.loading = 'lazy';
                         img.alt = picture.title;
                         img.style.width = "100%";
 
