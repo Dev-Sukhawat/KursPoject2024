@@ -27,6 +27,7 @@ function galleryElement() {
                     const img = document.createElement('img');
                     img.src = picture.src;
                     img.alt = picture.title;
+                    img.loading = 'lazy';
 
                     const imgH = document.createElement('h1');
                     imgH.className = 'imgH';

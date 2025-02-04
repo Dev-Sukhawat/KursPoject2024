@@ -24,6 +24,7 @@ function movieElement() {
                     const img = document.createElement('img');
                     img.src = movie.src;
                     img.alt = movie.title;
+                    img.loading = 'lazy';
 
                     const moviesText = document.createElement('div');
                     moviesText.className = 'moviesText';
