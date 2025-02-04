@@ -179,7 +179,7 @@ body {
 .hero_IMG {
   position: relative;
   z-index: -1;
-  height: 100dvh;
+  height: 100vh;
 }
 .hero_IMG .wallpaper {
   display: none;
